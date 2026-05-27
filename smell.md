@@ -1,0 +1,13 @@
+Guidelines for writing good code:
+  - Avoid verbosity like the plague. Tight but human-readable code always rules.
+  - Use OOP only when necessary. Small, decoupled functions always do the job better.
+  - Write for humans: small functions with dumb logic sometimes outdo elaborate patterns. If a function exceeds twelve lines, it's time to split it
+  - Functionality based on files. All meaningful actions should be files. Files should be small. Rough example: `new()` inside `/api/client/cluster/create.py` is better than `create_new_cluster()` in `/api/client.py`)
+  - Humans will read your code. Respect their attention and involvement. Do not perform magic. Dumb logic always rules.
+  - Decouple functionality. DB API should never exist side-by-side with business logic.
+  - Reuse functions. The end result of the call stack should be a clean directed acyclic graph.
+  - Comments should be only used when necessary. You know the drill: self-explanatory code supersedes functions.
+  - Each directory should have its own `spec`, `architecture` or `readme `files that are, again, written for humans and can reproduce all functionality from scratch if the code disappears.
+  - Write tests whenever a new function is added and execute them until they pass. It will help you tons. Well-tested functions are well-tested codebases.
+  - Make sure the tests pass at each step of the process.
+  - Create a good spec that is by itself able to recreate the codebase flawlessly on every try.

@@ -1,3 +1,6 @@
 [submodule "dadar"]
 	path = dadar
-	url = /home/qwerty/repos/dadar
+	url = git@github.com:the-bokya/dadar.git
+[submodule "nyc"]
+	path = nyc
+	url = git@github.com:the-bokya/nyc.git
